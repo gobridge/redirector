@@ -1,6 +1,6 @@
 # redirector
 
-This app exists to issues redirects to target destinations for things like Gobridge's website (hosted as a markdown file on github) and the slack invite URL.
+This app exists to issue redirects to target destinations for things like Gobridge's website (hosted as a markdown file on github) and the slack invite URL.
 Heroku provides https termination via [ACM](https://devcenter.heroku.com/articles/automated-certificate-management).
 
 # Heroku Setup
