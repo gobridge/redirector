@@ -6,11 +6,15 @@ import (
 	"os"
 )
 
-const dest = "https://github.com/gobridge/about-us/blob/master/README.md"
-
 func main() {
-	port := os.Getenv("PORT")
+	dest := os.Getenv("DEST")
+	if dest == "" {
+		// original destination, here for easy deploy to original app
+		// that handles golangbridge.org
+		dest = "https://github.com/gobridge/about-us/blob/master/README.md"
+	}
 
+	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
 	}
